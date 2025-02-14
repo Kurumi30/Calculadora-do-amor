@@ -29,7 +29,7 @@ export function showNotification({ to, from, message }) {
   setTimeout(() => {
     Swal.fire({
       position: 'center',
-      title: `De: ${from} 💌<br> Para: ${to} 🌹`,
+      title: `De: ${from || 'Misterioso(a)'} 💌<br> Para: ${to} 🌹`,
       html: `<strong>${message}</strong>`,
       iconHtml: '<img src="https://github.com/heryyy/relationship-web/blob/master/src/assets/mocha.gif?raw=true" alt="Ícone de casal" style="width: 75px; height: 75px;">',
       showConfirmButton: true,
@@ -42,7 +42,6 @@ export function showNotification({ to, from, message }) {
 export function getRandomMessage() {
   const messages = [
     'Eu te amo! ❤',
-    'Você é tudo para mim! ❤',
     'I love you! ❤',
   ]
 
