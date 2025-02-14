@@ -1,0 +1,22 @@
+{
+  "name": "valentine-s-day",
+  "author": {
+    "name": "Kurumi30"
+  },
+  "description": "A project for celebrating Valentine's Day",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.16.0"
+  }
+}
