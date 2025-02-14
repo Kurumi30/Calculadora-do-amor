@@ -1,8 +1,12 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/generate",
-      "dest": "/generate.html"
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/generate",
+      "destination": "/generate.html"
     }
   ]
 }
