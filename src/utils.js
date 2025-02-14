@@ -53,12 +53,12 @@ export function base64(value, encode = true) {
     ? btoa(
       String.fromCharCode(
         ...new TextEncoder().encode(value)
-      )
+      ).trim()
     )
     : new TextDecoder()
       .decode(
         Uint8Array.from(
           atob(value), c => c.charCodeAt(0)
         )
-      )
+      ).trim()
 }
