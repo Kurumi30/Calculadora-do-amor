@@ -83,7 +83,7 @@
 
       data.check = formData.has('check') ? true : false
       data.from = base64(data.from.trim())
-      data.message = base64(data.message.trim())
+      data.message = base64(data.message)
 
       const url = `${location.origin}/index.html?to=${data.to}&from=${data.from}&message=${data.message}`
 
