@@ -82,8 +82,8 @@
       const data = Object.fromEntries(formData)
 
       data.check = formData.has('check') ? true : false
-      data.from = base64(data.from)
-      data.message = base64(data.message) // Te amo: minha linda, maravilhosa, tudo de bom para "você"! ❤
+      data.from = base64(data.from.trim())
+      data.message = base64(data.message.trim())
 
       const url = `${location.origin}/index.html?to=${data.to}&from=${data.from}&message=${data.message}`
 
